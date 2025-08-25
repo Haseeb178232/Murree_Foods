@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murree-Foods</title>
+    <link rel="shortcut icon" href="assets/img/idc3-Q5Wpz_logos.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-black/90">
+
+   
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-black/50 backdrop-blur-md text-white px-2 font-[Cursive] md:px-4" data-aos="zoom-in" data-aos-easing="linear">
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-3  md:px-6 py-4">
+          <!-- Logo -->
+          <a href="#top" class="text-xl md:text-2xl font-bold text-orange-500">
+              <i class="fa-solid fa-utensils text-orange-500 pr-2"></i>MURREE FOODS
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex space-x-6">
+              <a href="#home" class="px-3 py-2 hover:bg-orange-600 hover:scale-110 rounded-xl duration-300">Home</a>
+              <a href="#About" class="px-3 py-2 hover:bg-orange-600 hover:scale-110 rounded-xl duration-300">About</a>
+              <a href="#services" class="px-3 py-2 hover:bg-orange-600 hover:scale-110 rounded-xl duration-300">Services</a>
+              <a href="#dishes" class="px-3 py-2 hover:bg-orange-600 hover:scale-110 rounded-xl duration-300">Traditional Foods</a>
+              <a href="#contact" class="px-3 py-2 hover:bg-orange-600 hover:scale-110 rounded-xl duration-300">Contact</a>
+          </div>
+
+          <!-- Hamburger Button -->
+          <div class="lg:hidden">
+              <button id="menu-btn" class="focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+              </button>
+          </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden flex-col space-y-2 px-6 pb-4 text-center">
+          <a href="#home" class="block px-3 py-2 hover:bg-orange-600 hover:scale-110 rounded-xl duration-300">Home</a>
+          <a href="#About" class="block px-3 py-2 hover:bg-orange-600 hover:scale-110 rounded-xl duration-300">About</a>
+          <a href="#services" class="block px-3 py-2 hover:bg-orange-600 hover:scale-110 rounded-xl duration-300">Services</a>
+          <a href="#dishes" class="block px-3 py-2 hover:bg-orange-600 hover:scale-110 rounded-xl duration-300">Traditional Foods</a>
+          <a href="#contact" class="block px-3 py-2 hover:bg-orange-600 hover:scale-110 rounded-xl duration-300">Contact</a>
+      </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="font-[Mancondo] relative h-screen w-full bg-black/80" id="home" data-aos="fade-down" data-aos-easing="linear">
+      <div class="swiper absolute inset-0 h-full w-full">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide relative bg-cover bg-center" style="background-image: url(/assets/img/hero-murree.jpg)">
+                  <div class="absolute inset-0 bg-black/40"></div>
+              </div>
+              <div class="swiper-slide relative bg-cover bg-center" style="background-image: url(/assets/img/top-view-bowls-with-indian-food.jpg)">
+                  <div class="absolute inset-0 bg-black/40"></div>
+              </div>
+              <div class="swiper-slide relative bg-cover bg-center" style="background-image: url(/assets/img/pexels-chanwalrus-941869.jpg)">
+                  <div class="absolute inset-0 bg-black/40"></div>
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-2 md:px-6 text-white  font-[Cursive]">
+          <h1 class="text-3xl sm:text-4xl md:text-7xl leading-tight">
+              Authentic Taste of the <br class="hidden lg:block">Hills
+          </h1>
+          <span class="text-xl sm:text-2xl mb-4 md:mb-5">Spice Up Your Journey with Murree's Finest Cuisine</span>
+          <p class="text-sm sm:text-base md:text-md max-w-xl md:max-w-2xl mb-6 md:mb-8">
+              Experience the rich culinary heritage of Murree with our premium food delivery service.
+          </p>
+          <div class="flex  sm:flex-row gap-3 sm:gap-4">
+              <button class="border border-white px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base hover:bg-white hover:text-black transition rounded-md">
+                  Order now
+              </button>
+              <button class="border border-white px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base bg-white text-black transition hover:bg-transparent hover:text-white rounded-md">
+                  Explore Menu
+              </button>
+          </div>
+      </div>
+  </section>
+
+<!-- About US -->
+    <section class="relative py-20 " id="About" data-aos="fade-down-right" data-aos-easing="linear">
+        <img src="assets/img/bg-2.8bae21f85dd8fdf29a8d.png.png" alt="" class="absolute top-0 right-0 w-80 z-[-10]">
+        <img src="assets/img/shopbg11.png" alt="" class="absolute top-15 left-0 z-[-10]">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 ">
+
+            <!-- Section Header -->
+            <div class="text-center mb-12 mt-15">
+
+
+                <div
+                    class="font-[Pacifico] text-[#FEA116] text-4xl mb-2 py-2 bg-gradient-to-r from-gray-500 max-w-md mx-auto rounded-full">
+                    About us</div>
+
+
+                <h2
+                    class="text-3xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-100 via-orange-600  to-purple-200 mb-2 font-[Mancondo]">
+                    Welcome to <i class="fa-solid fa-utensils text-orange-500 pr-2"></i>Murree Foods</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-orange-200 to-orange-900 mx-auto mt-3 rounded mb-5"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto font-[Mancondo]">
+                    Connecting tourists and locals with the authentic flavors of Murree's finest restaurants
+                </p>
+
+            </div>
+
+            <!-- Content Grid -->
+            <div class="font-[Cursive] grid md:grid-cols-2 gap-10 items-center">
+
+                <!-- Left: Text -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-[#D94D3F]">
+                        Your Gateway to Murree's Culinary Heritage
+                    </h3>
+                    <p class="text-gray-300">
+                        Murree Foods is more than just a food delivery service – we're your connection to the authentic
+                        tastes that make Murree special. Our platform brings together the best local restaurants,
+                        traditional recipes, and modern convenience in one delicious experience.
+                    </p>
+                    <p class="text-gray-300">
+                        Whether you're a tourist exploring the beautiful hills of Murree or a local craving your
+                        favorite dish, we ensure that every meal tells the story of our rich culinary heritage with
+                        flavors passed down through generations.
+                    </p>
+
+                    <!-- Stats / Features -->
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div
+                            class="flex items-center gap-3 p-2  bg-white rounded-xl shadow-md hover:scale-105 duration-300 md:p-4">
+                            <i class="fa-solid fa-store bg-orange-500 rounded-full text-white p-2 text-xl "></i>
+                            <span class="text-gray-700 text-sm font-medium">100+ Local Restaurants</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-2 bg-white rounded-xl shadow-md hover:scale-105 duration-300 md:p-4">
+                            <i class="fa-solid fa-clock  bg-orange-500 rounded-full text-white p-2 text-xl"></i>
+                            <span class="text-gray-700 text-sm font-medium">30-45 Min Delivery</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-4 bg-white rounded-xl shadow-md hover:scale-105 duration-300">
+                            <i class="fa-solid fa-medal  bg-orange-500 rounded-full text-white p-2 text-xl"></i>
+                            <span class="text-gray-700 text-sm font-medium">Premium Quality</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-4 bg-white rounded-xl shadow-md hover:scale-105 duration-300">
+                            <i class="fa-solid fa-shield-halved bg-orange-500 rounded-full text-white p-2 text-xl"></i>
+                            <span class="text-gray-700 text-sm font-medium">Safe & Hygienic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 duration-300">
+                    <img src="/assets/img/murree-attractions.jpg" alt="Murree Food Vibe"
+                        class="w-full h-full object-cover">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="relative bg-cover bg-center py-32"
+        style="background-image: url('/assets/img/vegetables-set-left-black-slate.jpg');" id="services" data-aos="zoom-in" data-aos-easing="linear">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative font-[Cursive]">
+
+            <!-- Central Circle (large screens only) -->
+            <div
+                class="hidden lg:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center rounded-full py-12 px-8 bg-gradient-to-r from-yellow-200 to-orange-300 hover:bg-white transition duration-500 z-20 w-64 hover:scale-105">
+                <div class="font-[Pacifico] text-[#FEA116] text-4xl font-bold mb-2">Our Services</div>
+                <p class="text-gray-700 font-[Mancondo] text-base">
+                    Connecting tourists and locals with the authentic flavors of Murree's finest restaurants
+                </p>
+            </div>
+
+            <!-- Medium & Small Screens: Hub on top -->
+            <div class="lg:hidden text-center mb-10">
+                <div
+                    class="inline-block rounded-full py-8 px-6 bg-gradient-to-r from-yellow-200 to-orange-300 hover:bg-white transition duration-500 hover:scale-105">
+                    <div class="font-[Pacifico] text-[#FEA116] text-3xl sm:text-4xl font-bold mb-2">Our Services</div>
+                    <p class="text-gray-700 font-[Mancondo] text-sm sm:text-base max-w-md mx-auto">
+                        Connecting tourists and locals with the authentic flavors of Murree's finest restaurants
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cards Wrapper -->
+            <div class="relative w-full">
+
+                <!-- Large Screens: Absolute Orbital Layout -->
+                <div class="hidden lg:block relative w-full h-[800px]">
+                    <!-- Card 1 (Top Left) -->
+                    <div
+                        class="absolute top-0 left-1/4 transform -translate-x-1/2 rounded-full bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 w-64 hover:scale-105">
+                        <i class="fa-solid fa-motorcycle text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">Lightning Fast Delivery</h3>
+                        <p class="text-md px-2">Quick and reliable delivery service covering all areas of Murree with
+                            real-time tracking and professional drivers.</p>
+                    </div>
+
+                    <!-- Card 2 (Top Right) -->
+                    <div
+                        class="absolute top-0 right-1/4 transform translate-x-1/2 rounded-full bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 w-64 hover:scale-105">
+                        <i class="fa-solid fa-store text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">Premium Restaurant Partners</h3>
+                        <p class="text-md px-2">Extensive network of carefully selected local restaurants and eateries
+                            maintaining highest quality standards.</p>
+                    </div>
+
+                    <!-- Card 3 (Middle Left) -->
+                    <div
+                        class="absolute top-1/2 left-0 transform -translate-y-1/2 rounded-full bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 w-64 hover:scale-105">
+                        <i class="fa-solid fa-gears text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">Smart Kitchen Management</h3>
+                        <p class="text-md">Complete kitchen management system helping restaurants optimize operations
+                            and maintain quality standards.</p>
+                    </div>
+
+                    <!-- Card 4 (Middle Right) -->
+                    <div
+                        class="absolute top-1/2 right-0 transform -translate-y-1/2 rounded-full bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 w-64 hover:scale-105">
+                        <i
+                            class="fa-solid fa-map-location-dot text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">Tourist-Focused Experience</h3>
+                        <p class="text-md px-2">Special services for tourists including local food recommendations,
+                            cultural dining, and curated meal packages.</p>
+                    </div>
+
+                    <!-- Card 5 (Bottom Left) -->
+                    <div
+                        class="absolute bottom-0 left-1/4 transform -translate-x-1/2 rounded-full bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 w-64 hover:scale-105">
+                        <i class="fa-solid fa-headset text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">24/7 Premium Support</h3>
+                        <p class="text-md px-2">Round-the-clock customer support ensuring smooth experience, quick issue
+                            resolution, and personalized assistance.</p>
+                    </div>
+
+                    <!-- Card 6 (Bottom Right) -->
+                    <div
+                        class="absolute bottom-0 right-1/4 transform translate-x-1/2 rounded-full bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 w-64 hover:scale-105">
+                        <i class="fa-solid fa-heart text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">Quality Assurance</h3>
+                        <p class="text-md px-2">Rigorous quality checks and food safety standards ensuring every meal
+                            meets our high standards for taste, freshness, and hygiene.</p>
+                    </div>
+                </div>
+
+                <!-- Medium & Small Screens: Grid Stack -->
+                <div class="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="rounded-lg bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 hover:scale-105">
+                        <i class="fa-solid fa-motorcycle text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">Lightning Fast Delivery</h3>
+                        <p class="text-sm">Quick and reliable delivery service covering all areas of Murree with
+                            real-time tracking and professional drivers.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="rounded-lg bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 hover:scale-105">
+                        <i class="fa-solid fa-store text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">Premium Restaurant Partners</h3>
+                        <p class="text-sm">Extensive network of carefully selected local restaurants and eateries
+                            maintaining highest quality standards.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="rounded-lg bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 hover:scale-105">
+                        <i class="fa-solid fa-gears text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">Smart Kitchen Management</h3>
+                        <p class="text-sm">Complete kitchen management system helping restaurants optimize operations
+                            and maintain quality standards.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="rounded-lg bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 hover:scale-105">
+                        <i
+                            class="fa-solid fa-map-location-dot text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">Tourist-Focused Experience</h3>
+                        <p class="text-sm">Special services for tourists including local food recommendations, cultural
+                            dining, and curated meal packages.</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div
+                        class="rounded-lg bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 hover:scale-105">
+                        <i class="fa-solid fa-headset text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">24/7 Premium Support</h3>
+                        <p class="text-sm">Round-the-clock customer support ensuring smooth experience, quick issue
+                            resolution, and personalized assistance.</p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div
+                        class="rounded-lg bg-white p-6 text-center hover:bg-orange-400 hover:text-white transition duration-500 hover:scale-105">
+                        <i class="fa-solid fa-heart text-3xl bg-orange-500 text-white p-2 rounded-full mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">Quality Assurance</h3>
+                        <p class="text-sm">Rigorous quality checks and food safety standards ensuring every meal meets
+                            our high standards for taste, freshness, and hygiene.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Traditional Dishes -->
+    <section class="relative py-20 overflow-x-hidden" id="dishes" data-aos="zoom-in-right" data-aos-easing="linear">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 text-center font-[Cursive]">
+
+            <!-- Section Header -->
+            <div class="mb-16">
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-100 via-orange-600 to-purple-200 mb-2 font-[Mancondo]">
+                    Traditional <i class="fa-solid fa-utensils text-orange-500 pr-2"></i>Murree Cuisine
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-orange-200 to-orange-900 mx-auto mt-3 rounded mb-5"></div>
+                <p class="text-gray-400 max-w-xl mx-auto font-[Mancondo] text-sm sm:text-base">
+                    Discover the authentic flavors that have been passed down through generations of mountain cooking
+                </p>
+            </div>
+
+            <img src="assets/img/bg-1.8f7891ade2cf907c12b1.png.png" alt="" class="absolute top-0 left-0 z-[-10]">
+
+            <img src="assets/img/back2 (1).png" alt="" class="absolute top-0 right-0 z-0">
+
+            <!-- Dish Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div
+                    class="mx-auto max-w-full sm:max-w-md md:max-w-lg relative rounded-xl overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 mb-16">
+
+                    <!-- Image -->
+                    <img src="/assets/img/traditional-food.webp" alt="Featured Dish"
+                        class="w-full h-64 sm:h-80 object-cover rounded-xl">
+
+                    <!-- Price Tag: Always Visible -->
+                    <div
+                        class="absolute top-2 right-2 bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-md z-20">
+                        From Rs350
+                    </div>
+
+                    <!-- Hover Text Overlay -->
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent text-white rounded-b-xl opacity-0 hover:opacity-100 transition-opacity duration-500">
+                        <h3 class="text-2xl font-bold mb-1">Murree Chicken Karahi</h3>
+                        <p class="text-sm sm:text-base">
+                            A signature dish of the region, prepared with fresh local spices that create an
+                            unforgettable taste experience unique to the hills of Murree.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Featured Dish -->
+                <div
+                    class="mx-auto max-w-full sm:max-w-md md:max-w-lg relative rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-500 mb-16">
+
+                    <img src="/assets/img/1-DSC_0139.jpg" alt="Featured Dish"
+                        class="w-full h-64 sm:h-80 object-cover rounded-xl">
+                    <div
+                        class="absolute top-2 right-2 bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-md z-20">
+                        From Rs280
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent text-white rounded-b-xl opacity-0 hover:opacity-100 transition-opacity duration-500">
+                        <h3 class="text-2xl font-bold mb-1">Murree Chapli Kebab</h3>
+                        <p class="text-sm sm:text-base">A savory kebab with secret spices, prepared traditionally in the
+                            heart of Murree.</p>
+                    </div>
+                </div>
+
+                <!-- Featured Dish -->
+                <div
+                    class="mx-auto max-w-full sm:max-w-md md:max-w-lg relative rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-500 mb-16">
+
+                    <img src="/assets/img/2c24dabb61062d668c91338119e04fb8_1000x1000.jpg" alt="Featured Dish"
+                        class="w-full h-64 sm:h-80 object-cover rounded-xl">
+                    <div
+                        class="absolute top-2 right-2 bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-md z-20">
+                        From Rs220
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent text-white rounded-b-xl opacity-0 hover:opacity-100 transition-opacity duration-500">
+                        <h3 class="text-2xl font-bold mb-1">Saag & Makki di Roti</h3>
+                        <p class="text-sm sm:text-base">Traditional winter delicacy featuring mustard greens curry
+                            served with corn flour flatbread, perfect for the hill station climate and enriched with
+                            pure desi ghee</p>
+                    </div>
+                </div>
+                <!-- Dish 4 -->
+                <div
+                    class="relative rounded-lg overflow-hidden shadow-md hover:scale-105 transform transition duration-500 bg-white">
+                    <img src="/assets/img/murree-scenic.jpg" alt="Dish 4" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute top-2 right-2 bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-md z-20">
+                        From Rs450
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg text-orange-600 mb-2">Mountain Trout</h4>
+                        <p class="text-gray-700 text-sm">Fresh trout from local mountain streams, prepared with
+                            traditional herbs and spices, offering a unique taste of Murree's natural bounty and
+                            pristine waters.</p>
+                    </div>
+                </div>
+
+                <!-- Dish 5 -->
+                <div
+                    class="relative rounded-lg overflow-hidden shadow-md hover:scale-105 transform transition duration-500 bg-white">
+                    <img src="/assets/img/restaurant-view.jpg" alt="Dish 5" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute top-2 right-2 bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-md z-20">
+                        From Rs180
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg text-orange-600 mb-2">Shufta (Sweet Delight)</h4>
+                        <p class="text-gray-700 text-sm">A traditional sweet confection made with premium dry fruits,
+                            pure sugar, and aromatic spices, perfect for celebrating special moments and experiencing
+                            authentic Murree sweetness.</p>
+                    </div>
+                </div>
+
+                <!-- Dish 6 -->
+                <div
+                    class="relative rounded-lg overflow-hidden shadow-md hover:scale-105 transform transition duration-500 bg-white">
+                    <img src="/assets/img/hero-murree.jpg" alt="Dish 6" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute top-2 right-2 bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-md z-20">
+                        From Rs120
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg text-orange-600 mb-2">Pani Puri & Chaat</h4>
+                        <p class="text-gray-700 text-sm">Popular street food favorites with a unique Murree twist,
+                            offering explosive flavors and textures that delight every palate with tangy, spicy, and
+                            sweet combinations.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section data-aos="zoom-in-left" data-aos-easing="linear">
+        <div class="bg-orange-600 py-15 px-5 font-[Cursive]">
+            <div class="flex flex-wrap items-center justify-evenly text-center gap-[50px] px-6">
+                <div class="hover:scale-105 duration-300">
+                    <i class="fa-solid fa-utensils text-7xl text-gray-900"></i>
+                    <div class="text-5xl font-bold text-orange-400">100+</div>
+                    <p class="font-semibold text-white">Partner Restaurents</p>
+                </div>
+                <div class="hover:scale-105 duration-300">
+                    <i class="fa-brands fa-intercom text-7xl text-gray-900"></i>
+                    <div class="text-5xl font-bold text-orange-400">50k+</div>
+                    <p class="font-semibold text-white">Happy Customers</p>
+                </div>
+                <div class="hover:scale-105 duration-300">
+                    <i class="fa-solid fa-cart-arrow-down text-7xl text-gray-900"></i>
+                    <div class="text-5xl font-bold text-orange-400">200k+</div>
+                    <p class="font-semibold text-white">Orders Delivered</p>
+                </div>
+                <div class="hover:scale-105 duration-300">
+                    <i class="fa-solid fa-star text-7xl text-gray-900"></i>
+                    <div class="text-5xl font-bold text-orange-400">4.8</div>
+                    <p class="font-semibold text-white">Average Rating</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Us -->
+   <section class="bg-cover bg-center pt-10 pb-32"
+    style="background-image: url(/assets/img/photo-1708335583165-57aa131a4969.avif);" id="contact" data-aos="fade-up" data-aos-easing="linear">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 ">
+
+        <!-- Blurred Background Container -->
+        <div class="bg-black/50 backdrop-blur-md rounded-xl p-5 md:p-10 ">
+
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <div
+                    class="font-[Pacifico] text-[#FEA116] text-4xl mb-2 py-2 bg-gradient-to-r from-gray-500 max-w-md mx-auto rounded-full">
+                    Contact us
+                </div>
+
+                <div class="w-20 h-1 bg-gradient-to-r from-orange-200 to-orange-900 mx-auto mt-3 rounded mb-5"></div>
+
+                <h2
+                    class="text-3xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-100 via-orange-600 to-purple-200 mb-2 font-[Mancondo]">
+                    How to Get in Touch?</h2>
+
+                <p class="text-white max-w-2xl mx-auto font-[Mancondo]">
+                    Ready to join the Murree Foods family? We'd love to hear from you
+                </p>
+            </div>
+
+            <!-- Two Columns -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 font-[Mancondo]">
+
+                <!-- Left Column: Contact Information -->
+                <div class="space-y-6 font-[Cursive] ">
+                    <h2 class="text-2xl font-semibold text-orange-500">Contact Information</h2>
+
+                    <div class="flex gap-3">
+                        <div>
+                        <i class="fa-solid fa-location-dot bg-gray-300 p-2 rounded-full text-orange-500 text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-orange-500 font-semibold">Address</h4>
+                            <p class="text-white text-sm">Mall Road, Murree <br> Punjab, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <div>
+                        <i class="fa-solid fa-phone bg-gray-300 p-2 rounded-full text-orange-500 text-lg"></i></div>
+                        <div>
+                            <h4 class="text-orange-500 font-semibold">Phone</h4>
+                            <p class="text-white text-sm">Muhammad Umair : +923445666088<br>
+                                Business Line: +92 51 9269000</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                       <div> <i class="fa-solid fa-envelope bg-gray-300 p-2 rounded-full text-orange-500 text-lg"></i></div>
+                        <div>
+                            <h4 class="text-orange-500 font-semibold">Email</h4>
+                            <p class="text-white text-sm">info@murreefoods.com<br> support@murreefoods.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                      <div><i class="fa-solid fa-clock bg-gray-300 p-2 rounded-full text-orange-500 text-lg"></i></div>
+                        <div>
+                            <h4 class="text-orange-500 font-semibold">Business Hours</h4>
+                            <p class="text-white text-sm">Mon - Sun: 8:00 AM - 11:00 PM<br> 24/7 Customer Support Available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Send a Message -->
+                <div class="space-y-6 font-[Cursive]">
+                    <h2 class="text-2xl font-semibold text-orange-500">Send us a Message</h2>
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <h5 class="text-white">Full Name</h5>
+                            <input type="text" class="bg-white rounded w-full p-2">
+                        </div>
+                        <div>
+                            <h5 class="text-white">Email Address</h5>
+                            <input type="email" class="bg-white rounded w-full p-2">
+                        </div>
+                        <div>
+                            <h5 class="text-white">Subject</h5>
+                            <input type="text" class="bg-white rounded w-full p-2">
+                        </div>
+                        <div>
+                            <h5 class="text-white">Message</h5>
+                            <textarea name="message" id="message" class="bg-white rounded w-full p-2"></textarea>
+                        </div>
+                    <div>
+                        <button class="bg-orange-500 text-white rounded-lg py-2 px-4  hover:bg-orange-300"><i class="fas fa-paper-plane pr-2 text-white"></i>Submit Here</button>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="relative pt-16 pb-10 text-white font-[Cursive]" data-aos="zoom-in data-aos-easing="linear">
+  <!-- Gradient Background -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black via-gray-800 to-orange-600 lg:bg-gradient-to-r from-black via-gray-800 to-orange-600"></div>
+  
+  <!-- Food Image Overlay -->
+  <div class="absolute inset-0 opacity-20">
+    <img src="/assets/img/bg-5.aada0ae02d8a7acdeaf7.png.png" alt="Food Background" class="w-full h-full object-cover">
+  </div>
+
+  <!-- Footer Content -->
+  <div class="relative max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-start">
+
+    <!-- About -->
+    <div>
+      <h3 class="text-2xl font-bold mb-4  text-white"><i
+                        class="fa-solid fa-utensils text-white pr-2"></i>Murree Foods</h3>
+      <p class="text-white/90 text-sm">
+        Bringing the authentic taste of Murree's finest cuisine to your doorstep. Experience the rich culinary heritage of the hills with every order.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 text-white">Quick Links</h3>
+      <ul class="space-y-2 text-white/90">
+        <li><a href="#" class="hover:text-orange-200 transition">Home</a></li>
+        <li><a href="#" class="hover:text-orange-200 transition">About Us</a></li>
+        <li><a href="#" class="hover:text-orange-200 transition">Services</a></li>
+        <li><a href="#" class="hover:text-orange-200 transition">Traditional Foods</a></li>
+        <li><a href="#" class="hover:text-orange-200 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 text-white">Services</h3>
+      <ul class="space-y-2 text-white/90">
+        <li><a href="#" class="hover:text-orange-200 transition">Food Delivery</a></li>
+        <li><a href="#" class="hover:text-orange-200 transition">Restaurant Partners</a></li>
+        <li><a href="#" class="hover:text-orange-200 transition">Tourist Packages</a></li>
+        <li><a href="#" class="hover:text-orange-200 transition">Catering Services</a></li>
+        <li><a href="#" class="hover:text-orange-200 transition">24/7 Support</a></li>
+      </ul>
+    </div>
+
+   <!-- Contact Info -->
+<div>
+    <h3 class="text-xl font-semibold text-orange-400 mb-4">Contact Info</h3>
+    <ul class="space-y-3 text-gray-300 text-sm">
+        <li><i class="fa-solid fa-phone pr-1 text-orange-400"></i> Muhammad Umair: +923445666088</li>
+        <li><i class="fa-solid fa-envelope pr-2 text-orange-400"></i> info@murreefoods.com</li>
+        <li><i class="fa-solid fa-location-dot pr-2 text-orange-400"></i> Mall Road, Murree, Punjab</li>
+    </ul>
+</div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="relative mt-12 border-t border-white/20 pt-6 text-center text-white/80 text-sm">
+    © 2024 Murree Foods. All rights reserved. | Designed with <span class="text-red-500">❤️</span> for the beautiful hills of Murree
+  </div>
+</footer>
+
+<!-- back to top btn -->
+<a href="#top"
+   id="backToTopBtn"
+   class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition-opacity duration-300 opacity-0 invisible z-50 flex flex-col items-center">
+  <i class="fa-solid fa-arrow-up text-3xl"></i>
+  <span class="text-sm mt-1">Top</span>
+</a>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const backToTopBtn = document.getElementById("backToTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) { // button appears after scrolling 300px
+      backToTopBtn.classList.remove("opacity-0", "invisible");
+      backToTopBtn.classList.add("opacity-100", "visible");
+    } else {
+      backToTopBtn.classList.add("opacity-0", "invisible");
+      backToTopBtn.classList.remove("opacity-100", "visible");
+    }
+  });
+});
+</script>
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+     const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        bulletClass: "swiper-pagination-bullet my-bullet", // <- include base class!
+        bulletActiveClass: "swiper-pagination-bullet-active my-bullet-active", // <- include base class!
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+    </script>
+    <!-- Hamburger JS -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true,     // whether animation happens only once
+  });
+</script>
+</body>
+
+</html>
