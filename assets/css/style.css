@@ -26,4 +26,18 @@ html {
   opacity: 1;
 }
 
+.swiper-pagination {
+  z-index: 30; /* higher than hero content */
+  position: absolute;
+  bottom: 20px; /* adjust as needed */
+  left: 0;
+  width: 100%;
+}
+.hero-content {
+  pointer-events: none; /* disables all pointer events */
+}
+
+.hero-content * {
+  pointer-events: auto; /* re-enable for buttons inside hero */
+}
     
